@@ -74,7 +74,7 @@ def save_files(save_format: str, directory: Path, contents: Dict[str, str]):
             if save_format == 'json':
                 json.dump(json.loads(content), f, sort_keys=True, indent=2, ensure_ascii=True)
             else:  # markdown, formatted, edn
-                if save_format == 'edn-DISABLED09042021':
+                if save_format == 'edn':
                     try:
                         jet = Popen(
                             ["jet", "--edn-reader-opts", "{:default tagged-literal}", "--pretty"],
