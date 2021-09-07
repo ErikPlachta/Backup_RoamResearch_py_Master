@@ -133,7 +133,7 @@ class Config:
                  database: Optional[str],
                  debug: bool,
                  gui: bool,
-                 sleep_duration: float = 2.,
+                 sleep_duration: float = 4.,
                  browser_args: Optional[List[str]] = None):
         self.user = os.environ["ROAMRESEARCH_USER"]
         self.password = os.environ["ROAMRESEARCH_PASSWORD"]
